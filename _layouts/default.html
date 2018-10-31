@@ -38,15 +38,11 @@
     <!-- #header-right -->
     <div id="header-right">
       <ul id="top-menu">
+        {% if site.github.is_project_page %}
         <li>
-          <a href="http://ds.iris.edu/ds/nodes/dmc/" title="IRIS DMC">DMC</a>
+          <a href="{{ site.github.repository_url }}" title="GitHub">View on GitHub</a>
         </li>
-        <li>
-          <a href="http://www.iris.edu/hq" title="IRIS HQ">Home</a>
-        </li>
-        <li>
-          <a href="http://www.iris.edu/hq" title="IRIS HQ">Home</a>
-        </li>
+        {% endif %}
       </ul>
       <div id="nsf-logo">
         <a href="http://www.nsf.gov/" target="_blank" title="The National Science Foundation">
