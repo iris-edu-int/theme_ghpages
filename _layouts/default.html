@@ -26,13 +26,6 @@
   <header>
   <div id="header">
     <div id="header-left">
-     <ul id="top-menu">
-       {% if site.github.is_project_page %}
-       <li>
-         <a href="{{ site.github.url }}" title="HomeDoc">View Documentation Home Page</a>
-       </li>
-        {% endif %}
-      </ul>
       <div id="logo">
         <a href="http://ds.iris.edu/hq/" title="IRIS">
             <img alt="IRIS" src={{"/assets/static/img/layout/logos/iris_logo_shadow.png"| relative_url }} >
@@ -46,9 +39,9 @@
     <div id="header-right">
       <ul id="top-menu">
         {% if site.github.is_project_page %}
-        <li>
-          <a href="{{ site.github.repository_url }}" title="GitHub">View on GitHub</a>
-        </li>
+       <li>
+         <a href="{{ site.github.url }}" title="HomeDoc">View Documentation Home Page</a>
+       </li>
         {% endif %}
       </ul>
       <div id="nsf-logo">
